@@ -28,3 +28,77 @@
 2022-12-07 09:12:36.242 EST [76899] LOG:  background worker "logical replication launcher" (PID 76906) exited with exit code 1
 2022-12-07 09:12:36.243 EST [76901] LOG:  shutting down
 2022-12-07 09:12:36.246 EST [76899] LOG:  database system is shut down
+2022-12-07 09:24:10.543 EST [77625] LOG:  starting PostgreSQL 14.5 (Homebrew) on aarch64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.102), 64-bit
+2022-12-07 09:24:10.545 EST [77625] LOG:  listening on IPv6 address "::1", port 5433
+2022-12-07 09:24:10.545 EST [77625] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2022-12-07 09:24:10.545 EST [77625] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5433"
+2022-12-07 09:24:10.548 EST [77626] LOG:  database system was shut down at 2022-12-07 09:12:36 EST
+2022-12-07 09:24:10.550 EST [77625] LOG:  database system is ready to accept connections
+2022-12-07 09:26:54.851 EST [77625] LOG:  received fast shutdown request
+2022-12-07 09:26:54.853 EST [77625] LOG:  aborting any active transactions
+2022-12-07 09:26:54.854 EST [77625] LOG:  background worker "logical replication launcher" (PID 77632) exited with exit code 1
+2022-12-07 09:26:54.854 EST [77627] LOG:  shutting down
+2022-12-07 09:26:54.860 EST [77625] LOG:  database system is shut down
+2022-12-07 10:25:48.911 EST [79338] LOG:  starting PostgreSQL 14.5 (Homebrew) on aarch64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.102), 64-bit
+2022-12-07 10:25:48.913 EST [79338] LOG:  could not bind IPv6 address "::1": Address already in use
+2022-12-07 10:25:48.913 EST [79338] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2022-12-07 10:25:48.913 EST [79338] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2022-12-07 10:25:48.913 EST [79338] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2022-12-07 10:25:48.913 EST [79338] WARNING:  could not create listen socket for "localhost"
+2022-12-07 10:25:48.913 EST [79338] FATAL:  could not create any TCP/IP sockets
+2022-12-07 10:25:48.913 EST [79338] LOG:  database system is shut down
+2022-12-07 10:26:09.071 EST [79410] LOG:  starting PostgreSQL 14.5 (Homebrew) on aarch64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.102), 64-bit
+2022-12-07 10:26:09.074 EST [79410] LOG:  could not bind IPv6 address "::1": Address already in use
+2022-12-07 10:26:09.074 EST [79410] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2022-12-07 10:26:09.074 EST [79410] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2022-12-07 10:26:09.074 EST [79410] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2022-12-07 10:26:09.074 EST [79410] WARNING:  could not create listen socket for "localhost"
+2022-12-07 10:26:09.074 EST [79410] FATAL:  could not create any TCP/IP sockets
+2022-12-07 10:26:09.075 EST [79410] LOG:  database system is shut down
+2022-12-07 10:26:50.564 EST [79509] LOG:  starting PostgreSQL 14.5 (Homebrew) on aarch64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.102), 64-bit
+2022-12-07 10:26:50.566 EST [79509] LOG:  listening on IPv6 address "::1", port 5433
+2022-12-07 10:26:50.566 EST [79509] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2022-12-07 10:26:50.566 EST [79509] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5433"
+2022-12-07 10:26:50.568 EST [79510] LOG:  database system was shut down at 2022-12-07 10:25:07 EST
+2022-12-07 10:26:50.570 EST [79509] LOG:  database system is ready to accept connections
+2022-12-07 10:39:07.937 EST [79509] LOG:  received fast shutdown request
+2022-12-07 10:39:07.937 EST [79509] LOG:  aborting any active transactions
+2022-12-07 10:39:07.938 EST [79509] LOG:  background worker "logical replication launcher" (PID 79516) exited with exit code 1
+2022-12-07 10:39:07.938 EST [79511] LOG:  shutting down
+2022-12-07 10:39:07.940 EST [79509] LOG:  database system is shut down
+2022-12-07 10:42:30.681 EST [83260] LOG:  starting PostgreSQL 14.5 (Homebrew) on aarch64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.102), 64-bit
+2022-12-07 10:42:30.684 EST [83260] LOG:  listening on IPv6 address "::1", port 5433
+2022-12-07 10:42:30.684 EST [83260] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2022-12-07 10:42:30.684 EST [83260] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5433"
+2022-12-07 10:42:30.688 EST [83261] LOG:  database system was shut down at 2022-12-07 10:39:07 EST
+2022-12-07 10:42:30.691 EST [83260] LOG:  database system is ready to accept connections
+2022-12-07 10:48:29.906 EST [83260] LOG:  received fast shutdown request
+2022-12-07 10:48:29.907 EST [83260] LOG:  aborting any active transactions
+2022-12-07 10:48:29.908 EST [83260] LOG:  background worker "logical replication launcher" (PID 83267) exited with exit code 1
+2022-12-07 10:48:29.908 EST [83262] LOG:  shutting down
+2022-12-07 10:48:29.912 EST [83260] LOG:  database system is shut down
+2022-12-07 11:00:33.602 EST [84829] LOG:  starting PostgreSQL 14.5 (Homebrew) on aarch64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.102), 64-bit
+2022-12-07 11:00:33.604 EST [84829] LOG:  could not bind IPv6 address "::1": Address already in use
+2022-12-07 11:00:33.604 EST [84829] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2022-12-07 11:00:33.604 EST [84829] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2022-12-07 11:00:33.604 EST [84829] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2022-12-07 11:00:33.604 EST [84829] WARNING:  could not create listen socket for "localhost"
+2022-12-07 11:00:33.604 EST [84829] FATAL:  could not create any TCP/IP sockets
+2022-12-07 11:00:33.604 EST [84829] LOG:  database system is shut down
+2022-12-07 11:00:57.677 EST [84871] LOG:  starting PostgreSQL 14.5 (Homebrew) on aarch64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.102), 64-bit
+2022-12-07 11:00:57.679 EST [84871] LOG:  listening on IPv6 address "::1", port 5433
+2022-12-07 11:00:57.679 EST [84871] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2022-12-07 11:00:57.680 EST [84871] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5433"
+2022-12-07 11:00:57.683 EST [84872] LOG:  database system was shut down at 2022-12-07 11:00:26 EST
+2022-12-07 11:00:57.685 EST [84871] LOG:  database system is ready to accept connections
+2022-12-07 11:02:00.499 EST [85048] FATAL:  role "postgres" does not exist
+2022-12-07 11:04:39.306 EST [85212] FATAL:  role "postgres" does not exist
+2022-12-07 11:12:51.997 EST [86371] FATAL:  role "master" does not exist
+2022-12-07 11:13:16.717 EST [86439] FATAL:  role "master" does not exist
+2022-12-07 11:13:34.624 EST [86510] FATAL:  role "postgres" does not exist
+2022-12-07 11:13:45.742 EST [86570] ERROR:  role "postgres" does not exist
+2022-12-07 11:13:45.742 EST [86570] STATEMENT:  ALTER USER postgres WITH PASSWORD 'postgres';
+2022-12-07 11:41:59.811 EST [88945] ERROR:  unrecognized configuration parameter "tables"
+2022-12-07 11:41:59.811 EST [88945] STATEMENT:  SHOW TABLES
+2022-12-07 12:03:02.755 EST [89466] FATAL:  database "alexdjordjevic" does not exist
+2022-12-07 12:03:37.808 EST [89477] FATAL:  database "public" does not exist
