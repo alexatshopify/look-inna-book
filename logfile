@@ -1,0 +1,30 @@
+2022-12-07 09:06:19.189 EST [76210] LOG:  starting PostgreSQL 14.5 (Homebrew) on aarch64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.102), 64-bit
+2022-12-07 09:06:19.191 EST [76210] LOG:  could not bind IPv6 address "::1": Address already in use
+2022-12-07 09:06:19.191 EST [76210] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2022-12-07 09:06:19.191 EST [76210] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2022-12-07 09:06:19.191 EST [76210] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2022-12-07 09:06:19.191 EST [76210] WARNING:  could not create listen socket for "localhost"
+2022-12-07 09:06:19.191 EST [76210] FATAL:  could not create any TCP/IP sockets
+2022-12-07 09:06:19.192 EST [76210] LOG:  database system is shut down
+2022-12-07 09:09:36.057 EST [76505] LOG:  starting PostgreSQL 14.5 (Homebrew) on aarch64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.102), 64-bit
+2022-12-07 09:09:36.059 EST [76505] LOG:  listening on IPv6 address "::1", port 5433
+2022-12-07 09:09:36.059 EST [76505] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2022-12-07 09:09:36.059 EST [76505] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5433"
+2022-12-07 09:09:36.061 EST [76506] LOG:  database system was shut down at 2022-12-07 09:05:49 EST
+2022-12-07 09:09:36.064 EST [76505] LOG:  database system is ready to accept connections
+2022-12-07 09:11:02.899 EST [76505] LOG:  received fast shutdown request
+2022-12-07 09:11:02.899 EST [76505] LOG:  aborting any active transactions
+2022-12-07 09:11:02.900 EST [76505] LOG:  background worker "logical replication launcher" (PID 76512) exited with exit code 1
+2022-12-07 09:11:02.901 EST [76507] LOG:  shutting down
+2022-12-07 09:11:02.905 EST [76505] LOG:  database system is shut down
+2022-12-07 09:12:31.553 EST [76899] LOG:  starting PostgreSQL 14.5 (Homebrew) on aarch64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.102), 64-bit
+2022-12-07 09:12:31.555 EST [76899] LOG:  listening on IPv6 address "::1", port 5433
+2022-12-07 09:12:31.556 EST [76899] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2022-12-07 09:12:31.556 EST [76899] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5433"
+2022-12-07 09:12:31.558 EST [76900] LOG:  database system was shut down at 2022-12-07 09:11:02 EST
+2022-12-07 09:12:31.560 EST [76899] LOG:  database system is ready to accept connections
+2022-12-07 09:12:36.242 EST [76899] LOG:  received fast shutdown request
+2022-12-07 09:12:36.242 EST [76899] LOG:  aborting any active transactions
+2022-12-07 09:12:36.242 EST [76899] LOG:  background worker "logical replication launcher" (PID 76906) exited with exit code 1
+2022-12-07 09:12:36.243 EST [76901] LOG:  shutting down
+2022-12-07 09:12:36.246 EST [76899] LOG:  database system is shut down
