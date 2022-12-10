@@ -102,3 +102,68 @@
 2022-12-07 11:41:59.811 EST [88945] STATEMENT:  SHOW TABLES
 2022-12-07 12:03:02.755 EST [89466] FATAL:  database "alexdjordjevic" does not exist
 2022-12-07 12:03:37.808 EST [89477] FATAL:  database "public" does not exist
+2022-12-07 16:47:48.056 EST [97754] LOG:  starting PostgreSQL 14.5 (Homebrew) on aarch64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.102), 64-bit
+2022-12-07 16:47:48.058 EST [97754] LOG:  listening on IPv6 address "::1", port 5433
+2022-12-07 16:47:48.059 EST [97754] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2022-12-07 16:47:48.059 EST [97754] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5433"
+2022-12-07 16:47:48.062 EST [97755] LOG:  database system was interrupted; last known up at 2022-12-07 11:48:58 EST
+2022-12-07 16:47:48.099 EST [97755] LOG:  database system was not properly shut down; automatic recovery in progress
+2022-12-07 16:47:48.100 EST [97755] FATAL:  could not open directory "pg_stat": No such file or directory
+2022-12-07 16:47:48.100 EST [97754] LOG:  startup process (PID 97755) exited with exit code 1
+2022-12-07 16:47:48.100 EST [97754] LOG:  aborting startup due to startup process failure
+2022-12-07 16:47:48.101 EST [97754] LOG:  database system is shut down
+2022-12-07 16:48:58.495 EST [97978] LOG:  starting PostgreSQL 14.5 (Homebrew) on aarch64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.102), 64-bit
+2022-12-07 16:48:58.497 EST [97978] LOG:  listening on IPv6 address "::1", port 5433
+2022-12-07 16:48:58.497 EST [97978] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2022-12-07 16:48:58.497 EST [97978] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5433"
+2022-12-07 16:48:58.499 EST [97979] LOG:  database system was shut down at 2022-12-07 16:48:28 EST
+2022-12-07 16:48:58.501 EST [97978] LOG:  database system is ready to accept connections
+2022-12-10 11:15:54.072 EST [69088] ERROR:  syntax error at or near "User" at character 22
+2022-12-10 11:15:54.072 EST [69088] STATEMENT:  DROP TABLE IF EXISTS User
+2022-12-10 11:16:56.194 EST [69088] ERROR:  syntax error at or near "User" at character 14
+2022-12-10 11:16:56.194 EST [69088] STATEMENT:  CREATE TABLE User (
+	    id serial PRIMARY KEY,
+	    username varchar NOT NULL UNIQUE,
+	    password varchar NOT NULL,
+	    name varchar NOT NULL,
+	    preferred_address_id int,
+	    created_at date NOT NULL,
+	    CONSTRAINT fk_address
+	                  FOREIGN KEY (preferred_address_id)
+	                  REFERENCES Address(id)
+	)
+2022-12-10 11:18:40.093 EST [69247] ERROR:  syntax error at or near "Order" at character 22
+2022-12-10 11:18:40.093 EST [69247] STATEMENT:  DROP TABLE IF EXISTS Order
+2022-12-10 11:19:25.453 EST [69247] ERROR:  syntax error at or near "Order" at character 14
+2022-12-10 11:19:25.453 EST [69247] STATEMENT:  CREATE TABLE Order (
+	    id serial PRIMARY KEY,
+	    status varchar,
+	    created_at date NOT NULL,
+	    updated_at date NOT NULL,
+	    user_id int,
+	    delivery_address_id int,
+	    CONSTRAINT fk_user
+	                   FOREIGN KEY (user_id)
+	                   REFERENCES User(id),
+	    CONSTRAINT fk_address
+	                   FOREIGN KEY (delivery_address_id)
+	                   REFERENCES Address(id)
+	)
+2022-12-10 11:19:28.748 EST [69247] ERROR:  syntax error at or near "Order" at character 295
+2022-12-10 11:19:28.748 EST [69247] STATEMENT:  CREATE TABLE Items_in_order
+	(
+	    book_isbn varchar NOT NULL,
+	    order_id  int NOT NULL,
+	    count     int NOT NULL,
+	    CONSTRAINT fk_isbn
+	            FOREIGN KEY (book_isbn)
+	            REFERENCES Book(isbn),
+	    CONSTRAINT fk_order
+	            FOREIGN KEY (order_id)
+	            REFERENCES Order(id)
+	)
+2022-12-10 11:20:47.888 EST [69247] ERROR:  cannot drop table address because other objects depend on it
+2022-12-10 11:20:47.888 EST [69247] DETAIL:  constraint fk_address on table users depends on table address
+	constraint fk_address on table publisher depends on table address
+2022-12-10 11:20:47.888 EST [69247] HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2022-12-10 11:20:47.888 EST [69247] STATEMENT:  DROP TABLE IF EXISTS Address
