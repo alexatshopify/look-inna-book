@@ -58,70 +58,87 @@ public class Main {
         Scanner input = new Scanner(System.in);
         int choice = 0;
         String query_string = "";
-        while (choice != 4) {
-            System.out.println("Welcome to the bookstore! What would you like to do?");
-            System.out.println("1. Browse books");
-            System.out.println("2. Add book to order");
-            System.out.println("3. Check out");
-            System.out.println("4. Exit");
 
-            choice = input.nextInt();
+        System.out.println("What are you?");
+        System.out.println("1. Owner");
+        System.out.println("2. User");
+        choice = input.nextInt();
+        switch (choice){
+            case 1:
+                System.out.println("Welcome to your bookstore! What would you like to do?");
+                System.out.println("1. Display books");
+                System.out.println("2. Display orders");
+                System.out.println("3. Add books");
+                System.out.println("4. Exit");
+                choice = input.nextInt();
+                break;
+            case 2:
+                while (choice != 4) {
+                    System.out.println("Welcome to the bookstore! What would you like to do?");
+                    System.out.println("1. Browse books");
+                    System.out.println("2. Add book to order");
+                    System.out.println("3. Check out");
+                    System.out.println("4. Exit");
 
-            switch (choice) {
-                case 1:
-                    System.out.println("How would you like to browse?");
-                    System.out.println("1. By Title");
-                    System.out.println("2. By Genre");
-                    System.out.println("3. By Author");
-                    System.out.println("4. By Publisher");
-                    System.out.println("5. By Display all books");
                     choice = input.nextInt();
+
                     switch (choice) {
                         case 1:
-                            System.out.println("Enter a title: ");
-                            input.nextLine();
-                            query_string = input.nextLine();
-                            query_books(query_string, conn, 1);
+                            System.out.println("How would you like to browse?");
+                            System.out.println("1. By Title");
+                            System.out.println("2. By Genre");
+                            System.out.println("3. By Author");
+                            System.out.println("4. By Publisher");
+                            System.out.println("5. By Display all books");
+                            choice = input.nextInt();
+                            switch (choice) {
+                                case 1:
+                                    System.out.println("Enter a title: ");
+                                    input.nextLine();
+                                    query_string = input.nextLine();
+                                    query_books(query_string, conn, 1);
+                                    break;
+                                case 2:
+                                    System.out.println("Enter a genre: ");
+                                    input.nextLine();
+                                    query_string = input.nextLine();
+                                    query_books(query_string, conn, 2);
+                                    break;
+                                case 3:
+                                    System.out.println("Enter an author name: ");
+                                    input.nextLine();
+                                    query_string = input.nextLine();
+                                    query_books(query_string, conn, 3);
+                                    break;
+                                case 4:
+                                    System.out.println("Enter a publisher name: ");
+                                    input.nextLine();
+                                    query_string = input.nextLine();
+                                    query_books(query_string, conn, 4);
+                                    break;
+                                case 5:
+                                    query_books(query_string, conn, 5);
+                                    break;
+                            }
                             break;
                         case 2:
-                            System.out.println("Enter a genre: ");
+                            System.out.println("Enter the isbn of the book you want to add to your order: ");
                             input.nextLine();
                             query_string = input.nextLine();
-                            query_books(query_string, conn, 2);
+                            // add the book to the order
                             break;
                         case 3:
-                            System.out.println("Enter an author name: ");
-                            input.nextLine();
-                            query_string = input.nextLine();
-                            query_books(query_string, conn, 3);
+                            // code to check out
                             break;
                         case 4:
-                            System.out.println("Enter a publisher name: ");
-                            input.nextLine();
-                            query_string = input.nextLine();
-                            query_books(query_string, conn, 4);
+                            System.out.println("Goodbye! Thank you for visiting the bookstore.");
                             break;
-                        case 5:
-                            query_books(query_string, conn, 5);
+                        default:
+                            System.out.println("Invalid choice. Please try again.");
                             break;
                     }
-                    break;
-                case 2:
-                    System.out.println("Enter the isbn of the book you want to add to your order: ");
-                    input.nextLine();
-                    query_string = input.nextLine();
-                    // add the book to the order
-                    break;
-                case 3:
-                    // code to check out
-                    break;
-                case 4:
-                    System.out.println("Goodbye! Thank you for visiting the bookstore.");
-                    break;
-                default:
-                    System.out.println("Invalid choice. Please try again.");
-                    break;
-            }
+                }
+                break;
         }
     }
 }
